@@ -16,5 +16,4 @@ def publish(queue: str, message: dict, exchange: str = ""):
 
     message = json.dumps(message)
     channel.basic_publish(exchange=exchange, routing_key=queue, body=message)
-    print(f"send message: {message}")
     channel.close()

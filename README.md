@@ -1,18 +1,14 @@
-# rabbitmq_skill
+# Interactor Classes
 
-<p>A simple messenger app that uses rabbitmq to send messeges between differnt apps</p>
+<p>RabbitMQ logic has been moved to queue package</p>
 
 ## basic idea
-#### messenger 1:
-  <p>produces messages messages to queue 1 and consumes from queue 2</p>
-  
-#### messenger 2:
-  <p>produces messages messages to queue 2 and consumes from queue 1</p>
-
+<p>this system has 3 stations. station1 places an order.
+station2 checks if all products are available.
+station3 collects the total price of the order and sends the bill.
+</p>
 
 ## Guide:
 <ol>
 <li> start rabbitMQ by running docker-compose up command</li>
-<li> start messenger1.main, messenger2.main and message_counter.counter</li>
-<li>write new messages in messenger1</li>
 </ol>
