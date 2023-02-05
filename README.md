@@ -8,3 +8,11 @@
   
 #### messenger 2:
   <p>produces messages messages to queue 2 and consumes from queue 1</p>
+
+
+## Guide:
+<ol>
+<li> start rabbitMQ by running docker-compose up command</li>
+<li> start messenger1.main, messenger2.main and message_counter.counter</li>
+<li>write new messages in messenger1</li>
+</ol>
