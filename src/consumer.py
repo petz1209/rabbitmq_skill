@@ -32,8 +32,12 @@ def on_message_recieved(ch, method, properties, body):
     return None
 
 
+
+
+
+
 class Consumer:
-    def __init__(self, queue):
+    def __init__(self, queue, ):
         self.queue = queue
 
     def consume(self):
